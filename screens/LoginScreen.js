@@ -33,7 +33,7 @@ const LoginTab = ({ navigation }) => {
     };
 
     useEffect(() => {
-        SecureStore.getItemAsync('userinfo').then((userdata) => {
+        SecureStore.getItemAsync("userinfo").then((userdata) => {
             const userinfo = JSON.parse(userdata);
             if (userinfo) {
                 setUsername(userinfo.username);
